@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+                height: 100vh; /* 100%窗口高度 */
+                display: flex;/* 弹性布局 */
+                justify-content: center;/* 水平居中 */
+                align-items: center;/* 垂直居中 */
+                background: linear-gradient(200deg,#775b5f,#e3eeff);/* 渐变背景 */
+            }
+			.b{
+				margin:0;
+				padding:50px;
+			}
+			.box{
+				width:400px;
+			    height:400px;
+				background: linear-gradient(200deg,#3dc064,#e3eeff);
+		     /* position: absolute; 绝对定位
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); */ 
+			    display: flex;/* 弹性布局 */
+                justify-content: left;/* 水平往左 */
+                align-items: center;/* 垂直居中 */
+			}
+			.a-box{
+				width:200px;
+				height:200px;
+				background-color: aqua;
+				display: flex;
+                justify-content: center;
+                align-items: center;
+				
+			}
+			.css3-circle {/* 圆 */
+	            width:100px;
+            	height:100px;
+            	border-radius:30% 50% 14% 23%;/* 设置弧度 */ 
+            	background-color:#232323;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="b">
+			<div class="box">
+				<div class="a-box">
+					<div class="css3-circle"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

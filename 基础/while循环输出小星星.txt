@@ -1,0 +1,16 @@
+ <script type="text/javascript"> 
+for (var i = 1; i <= 10; i++) { //外层循环代表的是要循环的行数
+            for (var j = 0; j < i; j++) { //内层循环代表的是要打印的列数
+                document.write('★');
+            }
+            document.write('<br />');
+        }
+        for (var i = 1; i <= 10; i++) { //外层循环代表的是要循环的行数
+            for (var k = 0; k < 10 - i; k++) {//这层循环代表的是要循环的空格数
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (var j = 0; j < i; j++) { //内层循环代表的是要打印的列数
+                document.write('★&nbsp;&nbsp;&nbsp;&nbsp;');
+            }
+            document.write('<br />');
+        }

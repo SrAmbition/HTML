@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直角三角形</title>
+</head>
+<body>
+   
+    <script  > 
+    var str='';
+    for(var i=1;i<=10;i++){//外层循环控制行数
+        for(var j=1;j<=i;j++){//里层循环控制每一行的个数
+             
+            str=str+'⭐';
+        }
+        //str+='\n';
+        str=str+'\n'  ; 
+
+    }
+     console.log(str);
+     
+     for (var i = 1; i <= 10; i++) { //外层循环代表的是要循环的行数
+            for (var j = 0; j < i; j++) { //内层循环代表的是要打印的列数
+                document.write('⭐');
+            }
+            document.write('<br />');
+        }
+     for (var i = 1; i <= 10; i++) { //外层循环代表的是要循环的行数
+            for (var k = 0; k < 10 - i; k++) {//这层循环代表的是要循环的空格数
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (var j = 0; j < i; j++) { //内层循环代表的是要打印的列数
+                document.write('⭐&nbsp;&nbsp;');
+            }
+            document.write('<br />');
+        }
+        
+ 
+ 
+    </script> 
+</body>
+</html>
